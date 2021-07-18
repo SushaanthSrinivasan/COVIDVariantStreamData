@@ -28,5 +28,3 @@ public class SimpleKafkaProducer {
 		producer.close();
 	}
 }
-
-//Truck ,Caterpillar, JCB

@@ -27,27 +27,6 @@ public class GenerateVariantInfo {
 		}
 	}
 
-	/**
-	 * @Description: Randomly generate latitude and longitude within a rectangle
-	 * @param MinLon: minimum longitude MaxLon: maximum longitude MinLat: minimum
-	 *                latitude MaxLat: maximum latitude
-	 * @return @throws
-	 */
-	
-
-	/*public static String generateRandomVehicleId() {
-		return UUID.randomUUID().toString();
-	}
-
-	public static String generateRandomVehicleType() {
-		String[] vehicleTypeArray = { "Car", "Truck", "Bus", "Mini-Van", "Auto" };
-		return vehicleTypeArray[new Random().nextInt(vehicleTypeArray.length)];
-	}
-
-	public static double generateSensorData(double min, double max) {
-		return Math.random() * (max - mini) + mini;
-	}
-	*/
     public static String generatevariant(){
     	return UUID.randomUUID().toString();
     }
