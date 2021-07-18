@@ -29,8 +29,8 @@ public class SendVariantDataToKafka {
 				variantInfo.setDeaths(generatedeaths(0,21950));
 				variantInfo.setCaseFatality(generateCaseFatality(0,50000));
 				variantInfo.setCaseFatality28(generateCaseFatality28(0,50000));
-				SimpleKafkaProducer.sendDataToKafkaSingleBroker(variantInfo.toString(),"summatopic");
-				//SimpleKafkaProducer.sendDataToKafkaMultipleBroker(variantInfo.toString(), "summatopic", vehicleInfo.getVariant());
+				SimpleKafkaProducer.sendDataToKafkaSingleBroker(variantInfo.toString(),"varianttopic");
+				//SimpleKafkaProducer.sendDataToKafkaMultipleBroker(variantInfo.toString(), "varianttopic", vehicleInfo.getVariant());
 			}
 			System.out.println("Written " + records + " to Kafka..");
 			Thread.sleep(3000);

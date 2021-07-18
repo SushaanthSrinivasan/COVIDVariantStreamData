@@ -26,11 +26,11 @@ public class VariantConsumerStreaming {
 		kafkaParams.put("bootstrap.servers", "localhost:9092, anotherhost:9092");
 		kafkaParams.put("key.deserializer", StringDeserializer.class);
 		kafkaParams.put("value.deserializer", StringDeserializer.class);
-		kafkaParams.put("group.id", "summagroup");
+		kafkaParams.put("group.id", "variantgroup");
 		kafkaParams.put("auto.offset.reset", "earliest");
 		kafkaParams.put("enable.auto.commit", false);
 	
-		Collection<String> topics = Arrays.asList("summatopic"); //", "topicB");
+		Collection<String> topics = Arrays.asList("varianttopic"); //", "topicB");
 	
 		JavaInputDStream<ConsumerRecord<String, String>> stream = KafkaUtils.createDirectStream(
 			jssc,
